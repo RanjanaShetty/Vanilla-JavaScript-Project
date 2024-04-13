@@ -1,0 +1,17 @@
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+#count {
+    margin: 0 10px;
+}
