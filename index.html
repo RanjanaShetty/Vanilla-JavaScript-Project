@@ -1,17 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Color Flipper</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ Page</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Color Flipper</h1>
-    <div id="color" class="color">Click below to change color</div>
-    <button id="btn" class="btn">Change Color</button>
+
+<div class="container">
+  <h1>Frequently Asked Questions</h1>
+  <div class="accordion">
+    <div class="accordion-item" id="question1">
+      <div class="accordion-heading">
+        <h2 class="accordion-title">What is this page all about?</h2>
+        <button class="accordion-btn" onclick="toggleAccordion('question1')">+</button>
+      </div>
+      <div class="accordion-content">
+        <p>
+            This page is designed as an FAQ (Frequently Asked Questions) resource, where users can find answers to common queries on various topics. It aims to provide clarity and convenience by organizing information into collapsible sections, facilitating easy navigation and access to essential information.</p>
+      </div>
+    </div>
+    <div class="accordion-item" id="question2">
+      <div class="accordion-heading">
+        <h2 class="accordion-title">When was this started?</h2>
+        <button class="accordion-btn" onclick="toggleAccordion('question2')">+</button>
+      </div>
+      <div class="accordion-content">
+        <p>established on October 6, 2002, was created with the primary goal of promoting coding proficiency. It serves as a resource hub for users seeking answers to frequently asked questions, fostering a community dedicated to advancing coding knowledge and skills.</p>
+      </div>
+    </div>
+    <div class="accordion-item" id="question3">
+        <div class="accordion-heading">
+          <h2 class="accordion-title">CEO of this company?</h2>
+          <button class="accordion-btn" onclick="toggleAccordion('question3')">+</button>
+        </div>
+        <div class="accordion-content">
+            <p>Ceo of Ranj.code is Ranjana R Shetty from kundapura.</p>
+        </div>
+      </div>
+      <div class="accordion-item" id="question4">
+        <div class="accordion-heading">
+          <h2 class="accordion-title">Partnered by</h2>
+          <button class="accordion-btn" onclick="toggleAccordion('question4')">+</button>
+        </div>
+        <div class="accordion-content">
+            <p>Its partnered by her sibling Rachana R Shetty</p>
+        </div>
+      </div>
   </div>
-  <script src="script.js"></script>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
